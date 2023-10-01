@@ -5,7 +5,7 @@
 
 ## Styles
 - Angular coding Style: https://infinum.com/handbook/frontend/angular/angular-guidelines-and-best-practices/formatting-naming-and-best-practices
-- Commitlint: https://github.com/conventional-changelog/commitlint
+- Commitlint: https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit
 
 ## Cli
 - Generate app: `npx nx g @nx/angular:app admin`
