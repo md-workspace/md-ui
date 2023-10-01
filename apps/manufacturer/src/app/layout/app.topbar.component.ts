@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'md-topbar',
@@ -13,7 +14,7 @@ export class AppTopBarComponent {
     {
       title: 'Hoạt động',
       children: [
-        {name: 'Hoạt động', path: ''},
+        {name: 'Hoạt động', path: 'hoat-dong'},
         {name: 'Phân loại', path: ''},
         {name: 'Ấp trứng', path: ''},
       ]
@@ -31,8 +32,11 @@ export class AppTopBarComponent {
       ]
     }
   ];
-  
-  onRoute(path: string) {
 
+  constructor(private readonly route: Router) {
+  }
+
+  onRoute(path: string) {
+    this.route.navigate([path]).then();
   }
 }

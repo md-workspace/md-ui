@@ -33,7 +33,7 @@ import {DropdownModule} from "primeng/dropdown";
     InputSwitchModule,
     RippleModule,
     RouterModule,
-    DropdownModule
+    DropdownModule,
   ],
   exports: [AppLayoutComponent]
 })
