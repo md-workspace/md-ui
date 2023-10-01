@@ -15,3 +15,6 @@
 
 ### Run app
 - Manufacturing: `npm run serve:manufacturer`
+
+### Build & Deploy
+ - Manufacturer: `docker build -t md-manufacturer:0.0.1 --file Dockerfile.manufacturer .`

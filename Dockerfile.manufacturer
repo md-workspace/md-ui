@@ -1,0 +1,14 @@
+FROM node:16 AS builder
+
+WORKDIR /ui-manufacturer
+
+COPY . .
+
+RUN yarn install
+
+RUN yarn build:prod:manufacturer
+
+EXPOSE 80
+
+FROM nginx:1.21.1-alpine
+COPY --from=builder ui-manufacturer/dist/apps/manufacturer /usr/share/nginx/html

@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve:manufacturer": "nx serve manufacturer --open"
+    "serve:manufacturer": "nx serve manufacturer --open",
+    "build:prod:manufacturer": "npx nx build manufacturer --prod"
   },
   "private": true,
   "dependencies": {
