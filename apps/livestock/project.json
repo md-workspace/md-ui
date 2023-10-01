@@ -2,7 +2,7 @@
   "name": "livestock",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "md-ui",
+  "prefix": "md",
   "sourceRoot": "apps/livestock/src",
   "tags": [],
   "targets": {

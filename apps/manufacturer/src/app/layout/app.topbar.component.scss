@@ -1,0 +1,22 @@
+:host ::ng-deep .p-dropdown {
+  background: #5A4F7F;
+  color: white;
+  align-items: center;
+  height: 55px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background: #4c4269;
+  }
+}
+
+:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder {
+  color: white;
+}
+
+:host ::ng-deep .p-dropdown-items {
+  padding: 0
+}

@@ -1,20 +1,38 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { LayoutService } from "./service/app.layout.service";
+import {Component} from '@angular/core';
+import {MenuItem} from 'primeng/api';
 
 @Component({
-    selector: 'app-topbar',
-    templateUrl: './app.topbar.component.html'
+  selector: 'md-topbar',
+  styleUrls: ['./app.topbar.component.scss'],
+  templateUrl: './app.topbar.component.html'
 })
 export class AppTopBarComponent {
+  items!: MenuItem[];
 
-    items!: MenuItem[];
+  menus = [
+    {
+      title: 'Hoạt động',
+      children: [
+        {name: 'Hoạt động', path: ''},
+        {name: 'Phân loại', path: ''},
+        {name: 'Ấp trứng', path: ''},
+      ]
+    },
+    {
+      title: 'Báo cáo',
+      children: [
+        {name: 'Báo cáo', path: ''}
+      ]
+    },
+    {
+      title: 'Cấu hình',
+      children: [
+        {name: 'Cấu hình', path: ''}
+      ]
+    }
+  ];
+  
+  onRoute(path: string) {
 
-    @ViewChild('menubutton') menuButton!: ElementRef;
-
-    @ViewChild('topbarmenubutton') topbarMenuButton!: ElementRef;
-
-    @ViewChild('topbarmenu') menu!: ElementRef;
-
-    constructor(public layoutService: LayoutService) { }
+  }
 }

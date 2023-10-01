@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "md-ui",
+            "prefix": "md",
             "style": "kebab-case"
           }
         ]
