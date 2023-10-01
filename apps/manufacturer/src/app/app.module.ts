@@ -5,9 +5,11 @@ import {AppComponent} from './app.component';
 import {appRoutes} from './app.routes';
 import {AppLayoutModule} from "./layout/app.layout.module";
 import {StageComponent} from "./pages/stage/stage.component";
+import {HatchComponent} from "./pages/hatch/hatch.component";
 
 const PAGES = [
-  StageComponent
+  StageComponent,
+  HatchComponent
 ];
 
 @NgModule({
