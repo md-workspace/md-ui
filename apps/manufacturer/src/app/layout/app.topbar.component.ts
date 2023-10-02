@@ -14,7 +14,6 @@ export class AppTopBarComponent {
     {
       title: 'Hoạt động',
       children: [
-        {name: 'Hoạt động', path: 'activity/hoat-dong'},
         {name: 'Phân loại', path: 'activity/phan-loai'},
         {name: 'Ấp trứng', path: 'activity/ap-trung'},
       ]
