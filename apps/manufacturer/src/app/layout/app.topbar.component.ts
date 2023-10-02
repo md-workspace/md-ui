@@ -27,7 +27,8 @@ export class AppTopBarComponent {
     {
       title: 'Cấu hình',
       children: [
-        {name: 'Cấu hình', path: ''}
+        {name: 'Quy trình', path: 'cau-hinh/quy-trinh'},
+        {name: 'Thiết bị', path: 'cau-hinh/thiet-bi'}
       ]
     }
   ];

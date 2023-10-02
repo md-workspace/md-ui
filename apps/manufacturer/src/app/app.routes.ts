@@ -7,6 +7,9 @@ export const appRoutes: Route[] = [
     children: [
       {
         path: 'activity', loadChildren: () => import('./pages/activity/activity.module').then((m) => m.ActivityModule),
+      },
+      {
+        path: 'cau-hinh', loadChildren: () => import('./pages/config/config.module').then((m) => m.ConfigModule),
       }
     ]
   }
