@@ -3,21 +3,27 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import {AppComponent} from './app.component';
 import {appRoutes} from './app.routes';
-import {AppLayoutModule} from "./layout/app.layout.module";
-import {StageComponent} from "./pages/stage/stage.component";
-import {HatchComponent} from "./pages/hatch/hatch.component";
+import {AppTopBarComponent} from "./layout/app.topbar.component";
+import {AppFooterComponent} from "./layout/app.footer.component";
+import {AppLayoutComponent} from "./layout/app.layout.component";
+import {DropdownModule} from "primeng/dropdown";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CommonModule} from "@angular/common";
 
-const PAGES = [
-  StageComponent,
-  HatchComponent
-];
 
 @NgModule({
-  declarations: [PAGES, AppComponent],
+  declarations: [
+    AppTopBarComponent,
+    AppFooterComponent,
+    AppLayoutComponent,
+    AppComponent
+  ],
   imports: [
-    AppLayoutModule,
     BrowserModule,
+    CommonModule,
     RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
+    DropdownModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
